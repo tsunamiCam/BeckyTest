@@ -653,15 +653,15 @@ body > header {
  /* Action */
  .action {
   background: linear-gradient(
-      rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.25)),
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)),
       url('../images/helliwell2.jpg') top center no-repeat;
   background-size: cover;
-  min-height: 180px;
   width:100%;
-  padding:4em 0;
+  padding-top: 7em;
+  padding-bottom: 7em;
   text-align: center;
-  opacity: 0.8;
+  opacity: 60%;
  }
 
   .action h2 {
@@ -675,15 +675,38 @@ body > header {
  }
 
 
+
  .action .row {
   margin-top:3em;
  }
+
+.action ul li a {
+  color:#fff;
+  font-size:1.5em;
+  text-transform:uppercase;
+  text-decoration:none;
+  padding:0.75em 2em;
+  font-weight: 400;
+}
+ .action  ul li a.btn {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; /* border radius */
+  border:3px solid #fff;
+ }
+ .action  ul li a.btn:hover {
+  background:#fff;
+  color:#000;
+
+ }
+
 
 
   /* Footer */
  footer {
   background:#fff;
   padding: 1em 0;
+  padding-bottom: 0;
  }
 
  footer nav ul {
@@ -712,7 +735,7 @@ body > header {
   line-height: 1;
   text-transform: uppercase;
   font-size:0.7em;
-  margin-top:0.5em;
+  margin-top:1.2em;
  }
 
 
@@ -781,6 +804,23 @@ body > header {
     letter-spacing: .1rem;
     text-decoration: none;
     line-height: 0.5rem;
+ }
+
+
+ /* About SCARP */
+ .about-scarp {
+  text-align: left;
+  padding:2em 0 2em;
+ }
+
+   .about-scarp img {
+  /*border-radius: 50%;*/
+  float:left;
+  display:inline;
+  margin-right:1em;
+  width: 20%;
+  height:20%;
+
  }
 
 
