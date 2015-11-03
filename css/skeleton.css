@@ -436,11 +436,13 @@ there.
 
 /* Header */
 body > header {
-  background: url('../images/becky-revel.jpg') top center no-repeat;
+  background: linear-gradient(
+      rgba(50, 0, 0, 0.25),
+      rgba(50, 0, 0, 0.25)),
+    url('../images/becky-revel.jpg') top center no-repeat;
   background-size: cover;
-  min-height: 680px;
+  min-height: 480px;
   width: 100%;
-
 }
 
  .logo {
@@ -457,30 +459,39 @@ body > header {
 
  header h1 {
   color:#fff;
-  font-weight:300;
+  font-weight:400;
   font-size:4.5em;
   line-height: 1;
-  text-shadow: 0 4px 8px rgba(0,0,0,.2);
+  //text-shadow: 0 1px 2px #000;
   margin-bottom: 0.3em;
   padding-top: 4em;
-  font-weight: bold;
  }
 
   header p {
   color:#fff;
   font-size:1.33em;
   line-height: 1.5;
-  text-shadow: 0 4px 8px rgba(0,0,0,.2);
+  //text-shadow: 0 1px 2px #000;
   margin-bottom: 1.2em;
  }
  header p strong {
   color:#fff;
  }
 
+/* Preamble */
+ 
+.header2 p {
+  color:#000;
+  font-size:1.25em;
+  line-height: 1.5;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
  /* Benefits */
  .benefits {
-  padding:4em 0 2em;
-  text-align: center;
+  padding:2em 0 2em;
+  text-align: left;
  }
 
   .benefits h2 {
@@ -492,6 +503,7 @@ body > header {
   color:#9d9d9d;
   font-size:1.1em;
 }
+
 
  img {
   max-width:100%;
@@ -640,7 +652,10 @@ body > header {
 
  /* Action */
  .action {
-  background:url('../images/helliwell2.jpg') top center no-repeat;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)),
+      url('../images/helliwell2.jpg') top center no-repeat;
   background-size: cover;
   min-height: 180px;
   width:100%;
@@ -652,12 +667,10 @@ body > header {
   .action h2 {
   color:#fff;
   font-weight:500;
-  text-shadow: 0 4px 8px rgba(0,0,0,.2);
  }
  
  .action p {
   color:#fff;
-  text-shadow: 0 1px 2px rgba(0,0,0,.2);
   font-size:1.2em;
  }
 
@@ -669,7 +682,7 @@ body > header {
 
   /* Footer */
  footer {
-  background:#009be8;
+  background:#fff;
   padding: 1em 0;
  }
 
@@ -682,7 +695,7 @@ body > header {
  }
 
  footer nav ul li a {
-  color:#fff;
+  color:#000;
   text-decoration:none;
   text-transform: uppercase;
   margin:0 1em 0 0;
@@ -695,7 +708,7 @@ body > header {
 
  
  footer p {
-  color:#fff;
+  color:#000;
   line-height: 1;
   text-transform: uppercase;
   font-size:0.7em;
@@ -724,13 +737,20 @@ body > header {
 
   } */
 
+ /* Benefits */
+ .about-becky {
+  text-align: left;
+  padding:2em 0 2em;
+ }
 
  .about-becky blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
+  margin-left: 2em;
+  margin-right: 4em;
   padding: 0.5em 10px;
-  font-size: 1.2em;
+  font-size: 1em;
   quotes: "\201C""\201D""\2018""\2019";
 }
  .about-becky blockquote:before {
@@ -745,6 +765,29 @@ body > header {
   display: inline;
 }
 
+  .about-becky img {
+  border-radius: 50%;
+  float:left;
+  display:inline;
+  margin-right:1em;
+  width:100px;
+  height:100px;
+ }
+
+  .readmore {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    line-height: 0.5rem;
+ }
+
+
+
+.dividing-line {
+  border-top: 1px solid #eee;
+  margin-bottom: 2rem;}
 
 
 
